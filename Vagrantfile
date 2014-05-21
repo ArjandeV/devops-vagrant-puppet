@@ -8,6 +8,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.box = "hashicorp/precise64"
     config.vm.box_check_update = true
   # config.vm.network "forwarded_port", guest: 80, host: 8080
+    config.vm.network "forwarded_port", guest: 80, host: 5000
   # config.vm.network "private_network", ip: "192.168.33.10"
   # config.vm.network "public_network"
   # config.ssh.forward_agent = true
@@ -21,7 +22,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # end
     config.vm.provision "puppet" do |puppet|
         puppet.manifests_path = "puppet/manifests"
-        puppet.manifest_file  = "index.pp"
+        puppet.manifest_file  = "init.pp"
         puppet.module_path = "puppet/modules"
     end
 end
