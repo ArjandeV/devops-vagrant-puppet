@@ -17,3 +17,4 @@ Reading List
 
 * [Using vagrant and puppet to setup your symfony2 environment | A day in the life of…](https://www.adayinthelifeof.nl/2012/06/29/using-vagrant-and-puppet-to-setup-your-symfony2-environment/)
     * <https://github.com/jaytaph/symfony2-puppet>
+* <https://github.com/tsteur/php-dev-vm>
