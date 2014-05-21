@@ -27,16 +27,19 @@ Reading List
 Getting Started
 --------------------
 
+Setting up project structure:
+
 <pre>
 git init
-touch {README.md,.gitignore}
+touch README.md
+echo .vagrant > .gitignore
 vagrant init
 mkdir -p project/www
 mkdir -p puppet/files/dot
 mkdir -p puppet/{manifests,modules}
-# mkdir -p puppet/modules/apache/{files,manifests}
-# mkdir -p puppet/modules/php/{files,manifests}
-# mkdir -p puppet/modules/mysql/{files,manifests}
+mkdir -p puppet/modules/{apache,mysql,php}/{files,manifests}
+touch puppet/modules/{apache,mysql,php}/files/.gitignore
+touch puppet/modules/{apache,mysql,php}/manifests/init.pp
 
 </pre>
 

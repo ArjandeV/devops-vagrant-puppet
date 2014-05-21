@@ -10,16 +10,17 @@ exec { 'apt-get update':
     path => '/usr/bin',
 }
 
-# Listing packages to install
-# @todo Convert to modules, activate services
-package {'apache2': ensure => present}
-package {'libapache2-mod-auth-mysql': ensure => present}
-package {'libapache2-mod-php5': ensure => present}
-package {'mysql-server': ensure => present}
-package {'php5': ensure => present}
-package {'php5-mysql': ensure => present}
-package {'tree': ensure => present}
-package {'vim': ensure => present}
+# Default package list
+$packages = [
+    'tree',
+    'vim',
+]
+
+# Install the default packages
+package { $packages:
+    ensure => present,
+    require => Exec['apt-get update']
+}
 
 # Create directory
 file { '/var/www/':
