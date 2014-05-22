@@ -9,6 +9,8 @@ Resources
 * [Vagrant Cloud](https://vagrantcloud.com/)
 * [Vagrantbox.es](http://www.vagrantbox.es/)
 * [Puppet Labs](http://puppetlabs.com/)
+    * [Installing Puppet: Mac OS X — Puppet Labs](http://docs.puppetlabs.com/guides/install_puppet/install_osx.html)
+        * <http://downloads.puppetlabs.com/mac/>
     * [Learning Puppet — Puppet Labs](http://docs.puppetlabs.com/learning/introduction.html)
     * [Puppet Forge](https://forge.puppetlabs.com/)
         * [Installing Modules — Puppet Labs](http://docs.puppetlabs.com/puppet/latest/reference/modules_installing.html)
@@ -25,6 +27,7 @@ Reading List
 * <https://github.com/tsteur/php-dev-vm>
 * <https://github.com/pmartin/vm-dev-php/>
 * [Using Vagrant and Puppet to build a PHP, Nginx and MySQL environment](http://jamesmcfadden.co.uk/using-vagrant-and-puppet-to-build-a-php-nginx-and-mysql-environment/)
+* [Using Puppet Modules to Install and Manage WordPress | Puppet Labs](http://puppetlabs.com/blog/using-puppet-modules-to-install-and-manage-wordpress)
 
 
 Getting Started
