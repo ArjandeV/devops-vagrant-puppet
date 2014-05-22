@@ -10,6 +10,9 @@ Resources
 * [Vagrantbox.es](http://www.vagrantbox.es/)
 * [Puppet Labs](http://puppetlabs.com/)
     * [Learning Puppet — Puppet Labs](http://docs.puppetlabs.com/learning/introduction.html)
+    * [Puppet Forge](https://forge.puppetlabs.com/)
+        * [Installing Modules — Puppet Labs](http://docs.puppetlabs.com/puppet/latest/reference/modules_installing.html)
+* [Puppet CookBook](http://www.puppetcookbook.com/)
 
 
 Reading List

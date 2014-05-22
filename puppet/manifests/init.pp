@@ -1,19 +1,24 @@
-# vagrant/puppet/manifests/init.pp
 
-# Create puppet group
-group { "puppet":
-    ensure => "present",
+$groups = [
+    'puppet',
+    'www-data'
+]
+
+# Create default group
+group { $groups:
+    ensure => "present"
 }
 
 # Run apt-get update
 exec { 'apt-get update':
-    path => '/usr/bin',
+    path => '/usr/bin'
 }
 
 # Default package list
 $packages = [
+    'bash-completion',
     'tree',
-    'vim',
+    'vim'
 ]
 
 # Install the default packages
@@ -22,7 +27,4 @@ package { $packages:
     require => Exec['apt-get update']
 }
 
-# Create directory
-file { '/var/www/':
-    ensure => 'directory',
-}
+include apache
