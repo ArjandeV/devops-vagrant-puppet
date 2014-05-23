@@ -16,7 +16,9 @@ exec { 'apt-get update':
 
 # Default package list
 $packages = [
+    'build-essential',
     'bash-completion',
+    'git-core',
     'tree',
     'vim'
 ]
