@@ -45,6 +45,8 @@ Reading List
 Code samples
 --------------
 
+* [vagrantee/vagrantee](https://github.com/vagrantee/vagrantee)
+
 * [TomJaeger/vagrant-puppet-lamp](https://github.com/TomJaeger/vagrant-puppet-lamp)
 
 * [jrodriguezjr/puppet-lamp-stack](https://github.com/jrodriguezjr/puppet-lamp-stack)
