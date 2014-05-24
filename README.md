@@ -37,6 +37,8 @@ Reading List
     * [jaytaph/symfony2-puppet](https://github.com/jaytaph/symfony2-puppet)
 * [Using Vagrant and Puppet to build a PHP, Nginx and MySQL environment](http://jamesmcfadden.co.uk/using-vagrant-and-puppet-to-build-a-php-nginx-and-mysql-environment/)
 * [Using Puppet Modules to Install and Manage WordPress | Puppet Labs](http://puppetlabs.com/blog/using-puppet-modules-to-install-and-manage-wordpress)
+* [How to Setup a PuppetMaster with Example42 modules | Example42](http://www.example42.com/?q=How_to_Setup_a_PuppetMaster)
+    * [example42/puppet-infrastructures](https://github.com/example42/puppet-infrastructures)
 
 
 Code samples
