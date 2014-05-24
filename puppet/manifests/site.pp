@@ -1,1 +1,3 @@
 include bootstrap
+
+class { 'apache': }

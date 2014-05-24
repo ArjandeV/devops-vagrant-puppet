@@ -18,6 +18,8 @@ class bootstrap {
     $packages = [
         'bash-completion',
         'build-essential',
+        'git-core',
+        'puppet',
         'tree',
         'vim'
     ]

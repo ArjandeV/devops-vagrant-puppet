@@ -25,7 +25,7 @@ Resources
     * [Installing Puppet: Mac OS X — Puppet Labs](http://docs.puppetlabs.com/guides/install_puppet/install_osx.html)
         * <http://downloads.puppetlabs.com/mac/>
 * [Puppet CookBook](http://www.puppetcookbook.com/)
-
+* Example42 Puppet Modules | Puppet documentation, tools, tutorials, modules and sample infrastructures http://www.example42.com/
 
 Reading List
 ---------------
