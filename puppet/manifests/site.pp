@@ -1,3 +1,1 @@
-include bootstrap
-
-#class { 'apache': }
+import 'bootstrap.pp'

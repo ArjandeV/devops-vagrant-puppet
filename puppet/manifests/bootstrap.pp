@@ -19,8 +19,6 @@ class bootstrap {
         'bash-completion',
         'build-essential',
         'git-core',
-        'facter',
-        'hiera',
         'puppet',
         'tree',
         'vim'
