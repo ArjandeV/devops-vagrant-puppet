@@ -43,6 +43,8 @@ Reading List
     * [example42/puppet-infrastructures](https://github.com/example42/puppet-infrastructures)
 * [vagrant - Using puppet module straight from a cloned repo - Stack Overflow](http://stackoverflow.com/questions/17570554/using-puppet-module-straight-from-a-cloned-repo)
 * Provisioning from multiple sources : [NexusIS/devstack-tempest](https://github.com/NexusIS/devstack-tempest/blob/master/Vagrantfile)
+* [Vagrant and puppet kata - Igor Popov](http://igorpopov.io/katas/2013/12/02/vagrant-puppet-librarian-kata/)
+    * [Puppet and Vagrant Kata - Igor Popov - YouTube](https://www.youtube.com/watch?v=2ADTsgR_xoE)
 
 
 Code samples
