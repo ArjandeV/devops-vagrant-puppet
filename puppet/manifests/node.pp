@@ -39,3 +39,4 @@ apache::vhost { $fqdn:
 
 include apache::mod::php
 include php
+include ::mysql::server
