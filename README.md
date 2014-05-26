@@ -19,6 +19,7 @@ Resources
     * [Learning Puppet — Puppet Labs](http://docs.puppetlabs.com/learning/introduction.html)
     * [Puppet Forge](https://forge.puppetlabs.com/)
         * [Installing Modules — Puppet Labs](http://docs.puppetlabs.com/puppet/latest/reference/modules_installing.html)
+        * [Module of the Week: Puppet Module Tool - Part 1 | Puppet Labs](http://puppetlabs.com/blog/module-of-the-week-puppet-module-tool-part-1)
     * [Core Types Cheat Sheet](http://docs.puppetlabs.com/puppet_core_types_cheatsheet.pdf)
     * [Puppet Module Cheat Sheet](http://docs.puppetlabs.com/module_cheat_sheet.html)
         * [Beginner's Guide to Modules — Puppet Labs](http://docs.puppetlabs.com/guides/module_guides/bgtm.html)
@@ -26,6 +27,7 @@ Resources
         * <http://downloads.puppetlabs.com/mac/>
 * [Puppet CookBook](http://www.puppetcookbook.com/)
 * Example42 Puppet Modules | Puppet documentation, tools, tutorials, modules and sample infrastructures http://www.example42.com/
+
 
 Reading List
 ---------------
@@ -39,6 +41,7 @@ Reading List
 * [Using Puppet Modules to Install and Manage WordPress | Puppet Labs](http://puppetlabs.com/blog/using-puppet-modules-to-install-and-manage-wordpress)
 * [How to Setup a PuppetMaster with Example42 modules | Example42](http://www.example42.com/?q=How_to_Setup_a_PuppetMaster)
     * [example42/puppet-infrastructures](https://github.com/example42/puppet-infrastructures)
+* [vagrant - Using puppet module straight from a cloned repo - Stack Overflow](http://stackoverflow.com/questions/17570554/using-puppet-module-straight-from-a-cloned-repo)
 
 
 Code samples
@@ -55,4 +58,5 @@ Code samples
 * [pmartin/vm-dev-php](https://github.com/pmartin/vm-dev-php)
 * [croomes/gonzo](https://github.com/croomes/gonzo)
     * « Gonzo lets you assess the impact of your Puppet change before rolling it out across your server estate. It takes over after continuous integration tools have run their tests and deployed the release to the Puppet Masters, but before clients have been updated. »
+* [jenkinsci/infra-puppet](https://github.com/jenkinsci/infra-puppet)
 
