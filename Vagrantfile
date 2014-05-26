@@ -6,15 +6,20 @@ VAGRANTFILE_API_VERSION = '2'
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.box = 'hashicorp/precise64'
-    config.vm.network 'forwarded_port', guest: 80, host: 8080
-    
-    # Silences the warning: Could not retrieve fact fqdn
-    config.vm.hostname = 'dev.project.com'
-
-    config.vm.provision 'puppet' do |puppet|
-        puppet.manifests_path = 'puppet/manifests'
-        puppet.manifest_file  = 'site.pp'
-        # puppet.module_path = 'puppet/modules'
-        # puppet.options = '--verbose --debug'
+    config.vm.define :node do |node|
+        node.vm.hostname = 'node'
+        node.vm.network :private_network, ip: '192.168.33.10'
+        node.vm.synced_folder '../', '/var/www/vagrant'
+        node.vm.provision :puppet do |puppet|
+            puppet.module_path = [
+                'puppet/modules/main',
+                'puppet/modules/third-party',
+            ]
+            puppet.manifests_path = 'puppet/manifests'
+            puppet.manifest_file = 'node.pp'
+            puppet.facter = {
+                'fqdn' => 'node.project.dev'
+            }
+        end
     end
-end
+ end

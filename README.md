@@ -43,6 +43,11 @@ Reading List
     * [example42/puppet-infrastructures](https://github.com/example42/puppet-infrastructures)
 * [vagrant - Using puppet module straight from a cloned repo - Stack Overflow](http://stackoverflow.com/questions/17570554/using-puppet-module-straight-from-a-cloned-repo)
 * Provisioning from multiple sources : [NexusIS/devstack-tempest](https://github.com/NexusIS/devstack-tempest/blob/master/Vagrantfile)
+
+
+librarian-puppet
+------------------
+
 * [Vagrant and puppet kata - Igor Popov](http://igorpopov.io/katas/2013/12/02/vagrant-puppet-librarian-kata/)
     * [Puppet and Vagrant Kata - Igor Popov - YouTube](https://www.youtube.com/watch?v=2ADTsgR_xoE)
 
@@ -62,4 +67,19 @@ Code samples
 * [croomes/gonzo](https://github.com/croomes/gonzo)
     * « Gonzo lets you assess the impact of your Puppet change before rolling it out across your server estate. It takes over after continuous integration tools have run their tests and deployed the release to the Puppet Masters, but before clients have been updated. »
 * [jenkinsci/infra-puppet](https://github.com/jenkinsci/infra-puppet)
+
+
+Getting started
+------------------
+
+<pre>
+gem install puppet
+gem install facter
+gem install hiera
+gem install librarian-puppet
+
+cd puppet
+librarian-puppet config --local path modules/third-party
+librarian-puppet install --verbose
+</pre>
 
