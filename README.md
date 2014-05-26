@@ -42,6 +42,7 @@ Reading List
 * [How to Setup a PuppetMaster with Example42 modules | Example42](http://www.example42.com/?q=How_to_Setup_a_PuppetMaster)
     * [example42/puppet-infrastructures](https://github.com/example42/puppet-infrastructures)
 * [vagrant - Using puppet module straight from a cloned repo - Stack Overflow](http://stackoverflow.com/questions/17570554/using-puppet-module-straight-from-a-cloned-repo)
+* Provisioning from multiple sources : [NexusIS/devstack-tempest](https://github.com/NexusIS/devstack-tempest/blob/master/Vagrantfile)
 
 
 Code samples
