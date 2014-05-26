@@ -50,6 +50,7 @@ librarian-puppet
 
 * [Vagrant and puppet kata - Igor Popov](http://igorpopov.io/katas/2013/12/02/vagrant-puppet-librarian-kata/)
     * [Puppet and Vagrant Kata - Igor Popov - YouTube](https://www.youtube.com/watch?v=2ADTsgR_xoE)
+    * [sensui/vagrant-puppet-librarian-kata](https://github.com/sensui/vagrant-puppet-librarian-kata)
 
 
 Code samples
