@@ -55,6 +55,16 @@ librarian-puppet
     * [Puppet and Vagrant Kata - Igor Popov - YouTube](https://www.youtube.com/watch?v=2ADTsgR_xoE)
     * [sensui/vagrant-puppet-librarian-kata](https://github.com/sensui/vagrant-puppet-librarian-kata)
 
+MySQL
+--------
+
+* [James D : Connect to MySQL in Vagrant with Sequel Pro](https://coderwall.com/p/yzwqvg)
+    * Vagrant's default SSH settings are as follows:
+        * SSH Host: 127.0.0.1
+        * SSH User: vagrant
+        * SSH Key: ~/.vagrant.d/insecureprivatekey
+        * SSH Port: 2222
+
 
 Code samples
 --------------
