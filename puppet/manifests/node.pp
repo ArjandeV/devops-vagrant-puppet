@@ -37,6 +37,8 @@ apache::vhost { $fqdn:
     docroot => '/vagrant/project/www',
 }
 
+apache::mod { 'rewrite': }
+
 include apache::mod::php
 include php
 include ::mysql::server

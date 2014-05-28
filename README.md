@@ -46,6 +46,7 @@ Reading List
 * Provisioning from multiple sources : [NexusIS/devstack-tempest](https://github.com/NexusIS/devstack-tempest/blob/master/Vagrantfile)
 * [Make $ vagrant up yours – Juan Treminio](https://jtreminio.com/2013/06/make_vagrant_up_yours/)
 * [Upgrade from PHP 5.3 to PHP 5.5 on Ubuntu 12.04 LTS - PHP Avenue](http://phpave.com/upgrade-php-5-3-php-5-5-ubuntu-12-04-lts/)
+* [Automatically Download and Install VirtualBox Guest Additions in Vagrant | Javalobby](http://java.dzone.com/articles/automatically-download-and)
 
 
 librarian-puppet
@@ -73,10 +74,21 @@ Code samples
 * [jenkinsci/infra-puppet](https://github.com/jenkinsci/infra-puppet)
 
 
+Documentation
+-----------------
+
+Quick tip: If you're adding modules as git submodules instead of using librarian-puppet, don't forget to check out the Dependencies tab
+
+* [puppetlabs/apache](https://forge.puppetlabs.com/puppetlabs/apache)
+* [example42/php](https://forge.puppetlabs.com/example42/php)
+* [puppetlabs/mysql](https://forge.puppetlabs.com/puppetlabs/mysql)
+
+
 Getting started
 ------------------
 
 <pre>
+vagrant plugin install vagrant-vbguest
 gem install puppet
 gem install facter
 gem install hiera
