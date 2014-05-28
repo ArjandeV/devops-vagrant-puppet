@@ -36,13 +36,24 @@ class { 'apache':
 }
 
 apache::vhost { $fqdn:
-    priority => 14,
-    port => 80,
     docroot => '/vagrant/project/www',
+    port => '80',
+    priority => '1',
 }
 
 apache::mod { 'rewrite': }
-
 include apache::mod::php
+
 include php
+php::module { 'curl': }
+php::module { 'gd': }
+php::module { 'gearman': }
+php::module { 'imagick': }
+php::module { 'ldap': }
+php::module { 'mcrypt': }
+php::module { 'mysql': }
+php::module { 'mysqlnd': }
+php::module { 'sqlite': }
+php::module { 'xdebug': }
+
 include ::mysql::server

@@ -27,7 +27,7 @@ Resources
     * [Installing Puppet: Mac OS X — Puppet Labs](http://docs.puppetlabs.com/guides/install_puppet/install_osx.html)
         * <http://downloads.puppetlabs.com/mac/>
 * [Puppet CookBook](http://www.puppetcookbook.com/)
-* Example42 Puppet Modules | Puppet documentation, tools, tutorials, modules and sample infrastructures http://www.example42.com/
+* [Example42 Puppet Modules | Puppet documentation, tools, tutorials, modules and sample infrastructures](http://www.example42.com/)
 
 
 Reading List
@@ -45,7 +45,6 @@ Reading List
 * [vagrant - Using puppet module straight from a cloned repo - Stack Overflow](http://stackoverflow.com/questions/17570554/using-puppet-module-straight-from-a-cloned-repo)
 * Provisioning from multiple sources : [NexusIS/devstack-tempest](https://github.com/NexusIS/devstack-tempest/blob/master/Vagrantfile)
 * [Make $ vagrant up yours – Juan Treminio](https://jtreminio.com/2013/06/make_vagrant_up_yours/)
-* [Upgrade from PHP 5.3 to PHP 5.5 on Ubuntu 12.04 LTS - PHP Avenue](http://phpave.com/upgrade-php-5-3-php-5-5-ubuntu-12-04-lts/)
 * [Automatically Download and Install VirtualBox Guest Additions in Vagrant | Javalobby](http://java.dzone.com/articles/automatically-download-and)
 
 

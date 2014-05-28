@@ -7,13 +7,12 @@ VAGRANTFILE_API_VERSION = '2'
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.box = 'ubuntu/trusty64'
     config.vm.box_version = '>= 14.04'
+    config.vm.network "forwarded_port", guest: 80, host: 8080
 
     # Default = 300
     config.vm.boot_timeout = 32000
 
-    # Can't see to vagrant reload when set to false
-    # Permanent solutions via pull requests are welcome
-    # @todo fixme
+    # Set to true for debugging
     config.vm.provider :virtualbox do |vb|
         vb.gui = false
     end
@@ -24,7 +23,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     
     config.vm.define :node do |node|
         node.vm.hostname = 'node'
-        node.vm.network :private_network, ip: '192.168.33.10'
+        # node.vm.network :private_network, ip: '192.168.33.10'
         node.vm.synced_folder '../', '/var/www/vagrant'
         node.vm.provision :puppet do |puppet|
             puppet.module_path = [
