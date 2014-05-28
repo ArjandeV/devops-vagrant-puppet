@@ -27,7 +27,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         node.vm.synced_folder '../', '/var/www/vagrant'
         node.vm.provision :puppet do |puppet|
             puppet.module_path = [
-                'puppet/modules/main',
+                'puppet/modules/local',
                 'puppet/modules/third-party',
             ]
             puppet.manifests_path = 'puppet/manifests'
