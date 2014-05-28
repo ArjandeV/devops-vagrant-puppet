@@ -27,6 +27,10 @@ group { 'puppet':
     ensure => present,
 }
 
+class { 'timezone':
+    timezone => 'America/Montreal',
+}
+
 class { 'apache':
     mpm_module => 'prefork',
 }

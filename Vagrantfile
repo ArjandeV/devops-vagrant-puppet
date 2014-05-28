@@ -9,9 +9,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.box_version = '>= 14.04'
 
     # Default = 300
-    config.vm.boot_timeout = 800
+    config.vm.boot_timeout = 32000
 
-    # Set to true for debugging
+    # Can't see to vagrant reload when set to false
+    # Permanent solutions via pull requests are welcome
+    # @todo fixme
     config.vm.provider :virtualbox do |vb|
         vb.gui = false
     end
