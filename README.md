@@ -13,6 +13,7 @@ Resources
 * [Vagrant](http://www.vagrantup.com/)
     * [Getting Started - Vagrant Documentation](http://docs.vagrantup.com/v2/getting-started/)
 * [Vagrant Cloud](https://vagrantcloud.com/)
+    * [Official Ubuntu boxes](https://vagrantcloud.com/ubuntu)
 * [Vagrantbox.es](http://www.vagrantbox.es/)
 * [Puppet Labs](http://puppetlabs.com/)
     * [Puppet Documentation Index — Puppet Labs](http://docs.puppetlabs.com/puppet/)
