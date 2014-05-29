@@ -1,12 +1,6 @@
 Vagrant / Puppet  Learning Envivonment
 =========================================
 
-Objective
-------------
-
-Setting up the leanest Vagrant / Puppet functional LAMP stack possible and see where this goes.
-
-
 Resources
 ------------
 
