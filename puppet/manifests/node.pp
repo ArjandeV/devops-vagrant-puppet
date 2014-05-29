@@ -1,59 +1,13 @@
-# @see http://igorpopov.io/katas/2013/12/02/vagrant-puppet-librarian-kata/
+include nodes::bootstrap
 
-Exec { path => [
-        '/bin',
-        '/sbin',
-        '/usr/bin',
-        '/usr/sbin',
-    ]
-}
+# Requires mod 'puppetlabs/apache'
+include lamp::apache2
 
-exec { 'system-update':
-    command => 'sudo apt-get update',
-}
+# Requires mod 'example42/php'
+include lamp::php
 
-Exec['system-update'] -> Package <| |>
+# Requires mod 'puppetlabs/mysql'
+include lamp::mysql
 
-package {
-    [
-        'git',
-        'tree',
-        'vim',
-    ]:
-    ensure => present,
-}
-
-group { 'puppet':
-    ensure => present,
-}
-
-class { 'timezone':
-    timezone => 'America/Montreal',
-}
-
-class { 'apache':
-    mpm_module => 'prefork',
-}
-
-apache::vhost { $fqdn:
-    docroot => '/vagrant/project/www',
-    port => '80',
-    priority => '1',
-}
-
-apache::mod { 'rewrite': }
-include apache::mod::php
-
-include php
-php::module { 'curl': }
-php::module { 'gd': }
-php::module { 'gearman': }
-php::module { 'imagick': }
-php::module { 'ldap': }
-php::module { 'mcrypt': }
-php::module { 'mysql': }
-php::module { 'mysqlnd': }
-php::module { 'sqlite': }
-php::module { 'xdebug': }
-
-include ::mysql::server
+include assets::composer
+include assets::phpunit

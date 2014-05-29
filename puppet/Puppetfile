@@ -1,6 +1,7 @@
 forge 'http://forge.puppetlabs.com'
 
-mod 'example42/php'
-mod 'example42/timezone'
 mod 'puppetlabs/apache'
 mod 'puppetlabs/mysql'
+mod 'example42/php'
+mod 'example42/timezone'
+mod 'maestrodev/wget'
