@@ -18,6 +18,7 @@ Resources
 * [Puppet Labs](http://puppetlabs.com/)
     * [Puppet Documentation Index — Puppet Labs](http://docs.puppetlabs.com/puppet/)
     * [Learning Puppet — Puppet Labs](http://docs.puppetlabs.com/learning/introduction.html)
+        * [puppetlabs/puppetlabs-training-bootstrap](https://github.com/puppetlabs/puppetlabs-training-bootstrap)
     * [Puppet Forge](https://forge.puppetlabs.com/)
         * [Installing Modules — Puppet Labs](http://docs.puppetlabs.com/puppet/latest/reference/modules_installing.html)
         * [Module of the Week: Puppet Module Tool - Part 1 | Puppet Labs](http://puppetlabs.com/blog/module-of-the-week-puppet-module-tool-part-1)
@@ -69,6 +70,7 @@ MySQL
 Code samples
 --------------
 
+* [puppetlabs/infrastructure-puppetfile](https://github.com/puppetlabs/infrastructure-puppetfile/blob/production/Puppetfile)
 * [vagrantee/vagrantee](https://github.com/vagrantee/vagrantee)
 * [TomJaeger/vagrant-puppet-lamp](https://github.com/TomJaeger/vagrant-puppet-lamp)
 * [jrodriguezjr/puppet-lamp-stack](https://github.com/jrodriguezjr/puppet-lamp-stack)

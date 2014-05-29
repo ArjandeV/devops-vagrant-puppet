@@ -1,13 +1,23 @@
-include nodes::bootstrap
+node 'node.project.dev' {
 
-# Requires mod 'puppetlabs/apache'
-include lamp::apache2
+    include nodes::bootstrap
 
-# Requires mod 'example42/php'
-include lamp::php
+    # Requires mod 'puppetlabs/apache'
+    include lamp::apache2
 
-# Requires mod 'puppetlabs/mysql'
-include lamp::mysql
+    # Requires mod 'example42/php'
+    include lamp::php
 
-include assets::composer
-include assets::phpunit
+    # Requires mod 'puppetlabs/mysql'
+    include lamp::mysql
+
+    include assets::composer
+    include assets::phpunit
+}
+
+##
+# Temporary setting for testing purposes
+# import method soon to be deprecated
+# @see http://docs.puppetlabs.com/puppet/latest/reference/lang_import.html
+##
+import 'jenkins.pp'
