@@ -49,3 +49,7 @@ TODO
     * Known issue ? See : [`vagrant up` hangs at "Waiting for VM to boot. This can take a few minutes" · mitchellh/vagrant Wiki](https://github.com/mitchellh/vagrant/wiki/%60vagrant-up%60-hangs-at-%22Waiting-for-VM-to-boot.-This-can-take-a-few-minutes%22)
 * Check if Facter and Hiera are automatically installed as dependencies of the puppet gem
     * If so, remove them from the requirements
+* Puppet ENV variables
+* Cache packages librarian style to improve multinode setup/teardown performances
+* Set current module versions in Puppetfile
+* Configure Jenkins & plugins
