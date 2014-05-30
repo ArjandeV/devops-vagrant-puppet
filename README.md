@@ -18,24 +18,27 @@ Requirements
     * <http://www.vagrantup.com/downloads.html>
 * [Puppet](http://puppetlabs.com/)
 
-<pre>
     vagrant plugin install vagrant-vbguest
     gem install puppet
     gem install facter
     gem install hiera
     gem install librarian-puppet
-</pre>
 
 Getting started
 ------------------
 
-<pre>
     git clone git@github.com:sthibault/learn-puppet.git
     cd learn-puppet/puppet/
     librarian-puppet install --verbose
     cd ..
     vagrant up
-</pre>
+    vagrant up jenkins #autostart set to false by default
+
+Hosts
+--------
+
+    192.168.33.10  dev.master.project.com
+    192.168.33.11  dev.jenkins.project.com
 
 TODO
 ------

@@ -1,4 +1,4 @@
-node 'node.project.dev' {
+node 'dev.master.project.com' {
 
     include nodes::bootstrap
 
@@ -14,10 +14,3 @@ node 'node.project.dev' {
     include assets::composer
     include assets::phpunit
 }
-
-##
-# Temporary setting for testing purposes
-# import method soon to be deprecated
-# @see http://docs.puppetlabs.com/puppet/latest/reference/lang_import.html
-##
-import 'jenkins.pp'

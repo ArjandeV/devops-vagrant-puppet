@@ -21,22 +21,41 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # Requires vagrant-vbguest plugin
     config.vbguest.auto_update = true
     
-    config.vm.define :node do |node|
-        node.vm.hostname = 'node'
-        node.vm.network 'private_network', ip: '192.168.33.10'
-        node.vm.network 'forwarded_port', guest: 80, host: 8080
-        node.vm.synced_folder '../', '/var/www/vagrant'
-        node.vm.provision :puppet do |puppet|
+    # Project master node
+    config.vm.define :master, primary: true do |master|
+        master.vm.hostname = 'master'
+        master.vm.network 'private_network', ip: '192.168.33.10'
+        master.vm.synced_folder '../', '/var/www/vagrant'
+        master.vm.provision :puppet do |puppet|
             puppet.module_path = [
                 'puppet/modules/local',
                 'puppet/modules/third-party',
             ]
             puppet.manifests_path = 'puppet/manifests'
-            puppet.manifest_file = 'node.pp'
+            puppet.manifest_file = 'master.pp'
             puppet.facter = {
-                'fqdn' => 'node.project.dev'
+                'fqdn' => 'dev.master.project.com'
             }
             # puppet.options = '--verbose --debug'
         end
     end
- end
+
+    # Jenkins node
+    config.vm.define :jenkins, autostart: false do |jenkins|
+        jenkins.vm.hostname = 'jenkins'
+        jenkins.vm.network 'private_network', ip: '192.168.33.11'
+        jenkins.vm.provision :puppet do |puppet|
+            puppet.module_path = [
+                'puppet/modules/local',
+                'puppet/modules/third-party',
+            ]
+            puppet.manifests_path = 'puppet/manifests'
+            puppet.manifest_file = 'jenkins.pp'
+            puppet.facter = {
+                'fqdn' => 'dev.jenkins.project.com'
+            }
+            # puppet.options = '--verbose --debug'
+        end
+    end
+
+end
