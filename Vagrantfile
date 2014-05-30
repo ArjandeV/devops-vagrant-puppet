@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
@@ -7,7 +8,6 @@ VAGRANTFILE_API_VERSION = '2'
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.box = 'ubuntu/trusty64'
     config.vm.box_version = '>= 14.04'
-    config.vm.network "forwarded_port", guest: 80, host: 8080
 
     # Default = 300
     config.vm.boot_timeout = 32000
@@ -23,7 +23,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     
     config.vm.define :node do |node|
         node.vm.hostname = 'node'
-        # node.vm.network :private_network, ip: '192.168.33.10'
+        node.vm.network 'private_network', ip: '192.168.33.10'
+        node.vm.network 'forwarded_port', guest: 80, host: 8080
         node.vm.synced_folder '../', '/var/www/vagrant'
         node.vm.provision :puppet do |puppet|
             puppet.module_path = [
@@ -35,7 +36,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
             puppet.facter = {
                 'fqdn' => 'node.project.dev'
             }
+            # puppet.options = '--verbose --debug'
         end
-        # puppet.options = '--verbose --debug'
     end
  end

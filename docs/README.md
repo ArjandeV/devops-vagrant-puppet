@@ -41,6 +41,8 @@ Reading List
 * Provisioning from multiple sources : [NexusIS/devstack-tempest](https://github.com/NexusIS/devstack-tempest/blob/master/Vagrantfile)
 * [Make $ vagrant up yours – Juan Treminio](https://jtreminio.com/2013/06/make_vagrant_up_yours/)
 * [Automatically Download and Install VirtualBox Guest Additions in Vagrant | Javalobby](http://java.dzone.com/articles/automatically-download-and)
+* [Puppet | vStone Blog](http://vstone.eu/category/linux/puppet/)
+    * [An (improved) Vagrantfile](https://gist.github.com/vStone/7d66587c93268d0b0897)
 
 
 librarian-puppet
