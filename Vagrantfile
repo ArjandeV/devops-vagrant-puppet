@@ -19,7 +19,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     # Automatically update VirtualBox Guest Additions
     # Requires vagrant-vbguest plugin
+    # @see https://github.com/dotless-de/vagrant-vbguest
     config.vbguest.auto_update = true
+
+    # Automatically run Librarian-Puppet before any provisioning step
+    # Requires vagrant-librarian-puppet plugin
+    # @see https://github.com/mhahn/vagrant-librarian-puppet
+    config.librarian_puppet.puppetfile_dir = 'puppet'
     
     # Project master node
     config.vm.define :master, primary: true do |master|

@@ -19,6 +19,7 @@ Requirements
 * [Puppet](http://puppetlabs.com/)
 
     vagrant plugin install vagrant-vbguest
+    vagrant plugin install vagrant-librarian-puppet
     gem install puppet
     gem install facter
     gem install hiera
@@ -28,9 +29,7 @@ Getting started
 ------------------
 
     git clone git@github.com:sthibault/devops.git
-    cd learn-puppet/puppet/
-    librarian-puppet install --verbose
-    cd ..
+    cd devops/
     vagrant up
     vagrant up jenkins #autostart set to false by default
 
@@ -45,5 +44,5 @@ TODO
 
 * Fix <code>vagrant reload</code> timeout issues
     * Problems with box metadata?
-* Fix vhost configs
-
+* Check if possible to set librarian-puppet configs with vagrant-librarian-puppet
+    * If so, remove <code>gem install librarian-puppet</code> from requirements
