@@ -36,7 +36,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         master.vm.provision :puppet do |puppet|
             puppet.module_path = [
                 'puppet/modules/local',
-                'puppet/modules/third-party',
+                'puppet/modules/librarian',
             ]
             puppet.manifests_path = 'puppet/manifests'
             puppet.manifest_file = 'master.pp'
@@ -54,7 +54,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         jenkins.vm.provision :puppet do |puppet|
             puppet.module_path = [
                 'puppet/modules/local',
-                'puppet/modules/third-party',
+                'puppet/modules/librarian',
             ]
             puppet.manifests_path = 'puppet/manifests'
             puppet.manifest_file = 'jenkins.pp'
