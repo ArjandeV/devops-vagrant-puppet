@@ -1,6 +1,14 @@
 Learning DevOps w/ Vagrant / Puppet
 =====================================
 
+LAMP Stack
+------------
+
+* Ubuntu 14.04 LTS (Trusty Tahr)
+* Apache 2.4.7
+* MySQL 5.5.37
+* PHP 5.5.9
+
 Requirements
 ---------------
 
