@@ -27,7 +27,7 @@ Requirements
 Getting started
 ------------------
 
-    git clone git@github.com:sthibault/learn-puppet.git
+    git clone git@github.com:sthibault/devops.git
     cd learn-puppet/puppet/
     librarian-puppet install --verbose
     cd ..
