@@ -26,7 +26,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # Requires vagrant-librarian-puppet plugin
     # @see https://github.com/mhahn/vagrant-librarian-puppet
     config.librarian_puppet.puppetfile_dir = 'puppet'
-    config.librarian_puppet.placeholder_filename = '.gitignore'
+    
+    # Must include custom path in file name as they are not
+    # currently supported by the plugin
+    # @see https://github.com/mhahn/vagrant-librarian-puppet/blob/master/lib/vagrant-librarian-puppet/action/librarian_puppet.rb
+    config.librarian_puppet.placeholder_filename = 'librarian/.gitignore'
     
     # Project master node
     config.vm.define :master, primary: true do |master|
