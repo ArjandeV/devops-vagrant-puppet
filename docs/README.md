@@ -43,6 +43,9 @@ Reading List
 * [Automatically Download and Install VirtualBox Guest Additions in Vagrant | Javalobby](http://java.dzone.com/articles/automatically-download-and)
 * [Puppet | vStone Blog](http://vstone.eu/category/linux/puppet/)
     * [An (improved) Vagrantfile](https://gist.github.com/vStone/7d66587c93268d0b0897)
+* [PuppetNYC Presents: Integrating Continuous Integration into your Puppet workflow using Jenkins - YouTube](https://www.youtube.com/watch?v=yUj0hsxGn6U)
+    * [Puppet & Jenkins - Slideshare](http://www.slideshare.net/mbarr1/puppet-jenkins)
+    * [matthewbarr/puppet-jenkins](https://github.com/matthewbarr/puppet-jenkins)
 
 
 librarian-puppet
