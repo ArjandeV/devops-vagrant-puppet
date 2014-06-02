@@ -25,7 +25,7 @@ class assets::composer {
 
     file { '/home/vagrant/.composer/composer.json':
         ensure => 'present',
-        source => '/vagrant/puppet/files/composer.json',
+        source => '/vagrant/puppet/files/dotfiles/.composer/composer.json',
         owner  => 'vagrant',
         group  => 'vagrant',
         require => File['/home/vagrant/.composer'],

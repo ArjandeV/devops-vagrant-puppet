@@ -28,6 +28,15 @@ class nodes::bootstrap {
         ensure => present,
     }
 
+    file { '/home/vagrant/.profile':
+        ensure => present,
+        source => '/vagrant/puppet/files/dotfiles/.profile',
+        owner  => 'vagrant',
+        group  => 'vagrant',
+        mode => '675',
+    }
+
+
     class { 'timezone':
         timezone => 'America/Montreal',
     }
