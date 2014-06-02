@@ -5,14 +5,18 @@
 class assets::composer {
     wget::fetch { 'composer-install':
         source => 'http://getcomposer.org/composer.phar',
-        destination => '/tmp/composer.phar',
-        cache_dir => '/var/cache/wget',
+        destination => '/vagrant/puppet/.tmp/cache/composer.phar',
     }
 
     file { '/usr/local/bin/composer':
         ensure => 'present',
-        source => '/tmp/composer.phar',
+        source => '/vagrant/puppet/.tmp/cache/composer.phar',
         mode => '+x',
         require => Wget::Fetch['composer-install'],
     }
+
+    file { '~/.composer':
+        ensure => 'directory',
+    }
+
 }
