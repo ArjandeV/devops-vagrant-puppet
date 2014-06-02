@@ -11,4 +11,10 @@ node 'dev.jenkins.project.com' {
     include lamp::mysql
 
     include jenkins
+
+    jenkins::plugin {
+        'checkstyle': ;
+        'git': ;
+    }
+
 }
