@@ -1,4 +1,16 @@
 class lamp::php {
+
+    package {
+        [
+            'pear-channels',
+            'php-codecoverage',
+            'php-codesniffer',
+            'phpunit',
+            'php-validate',
+        ]:
+        ensure => present,
+    }
+
     include php
     php::module { 'curl': }
     php::module { 'gd': }
@@ -10,4 +22,5 @@ class lamp::php {
     php::module { 'mysqlnd': }
     php::module { 'sqlite': }
     php::module { 'xdebug': }
+    php::module { 'xsl': }
 }

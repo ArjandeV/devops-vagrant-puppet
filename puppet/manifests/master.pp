@@ -12,5 +12,4 @@ node 'dev.master.project.com' {
     include lamp::mysql
 
     include assets::composer
-    include assets::phpunit
 }

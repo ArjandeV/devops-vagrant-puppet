@@ -1,7 +1,10 @@
 {
     "require": {
-        "pdepend/pdepend" : "1.1.*",
-        "phpmd/phpmd" : "1.4.*",
-        "sebastian/phpcpd": "2.0.*@dev"
+        "pdepend/pdepend": ">=2.0",
+        "phing/phing": ">=2.7",
+        "phploc/phploc": ">=2.0",
+        "phpmd/phpmd": ">=1.0",
+        "sebastian/phpcpd": ">=2.0",
+        "theseer/phpdox": ">=0.6"
     }
 }

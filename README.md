@@ -9,6 +9,28 @@ LAMP Stack
 * MySQL 5.5.37
 * PHP 5.5.9
 
+### Additional Packages
+
+* apt-get packages
+    * <code>/puppet/modules/local/nodes/manifests/bootstrap.pp</code>
+        * git
+        * tree
+        * vim
+    * <code>/puppet/modules/local/lamp/manifests/php.pp</code>
+        * pear-channels
+        * php-codecoverage
+        * php-codesniffer
+        * phpunit
+        * php-validate
+* composer global install
+    * <code>/puppet/files/dotfiles/.composer/composer.json</code>
+    * pdepend
+    * phing
+    * phpcpd
+    * phpdox
+    * phploc
+    * phpmd
+
 Requirements
 ---------------
 
@@ -44,6 +66,7 @@ Hosts
 TODO
 ------
 
+* Dynamic configs (currently static, hard coded in local manifests)
 * Fix <code>vagrant reload</code> timeout issues
     * Problems with box metadata?
     * Known issue ? See : [`vagrant up` hangs at "Waiting for VM to boot. This can take a few minutes" · mitchellh/vagrant Wiki](https://github.com/mitchellh/vagrant/wiki/%60vagrant-up%60-hangs-at-%22Waiting-for-VM-to-boot.-This-can-take-a-few-minutes%22)
