@@ -1,4 +1,5 @@
 node 'dev.jenkins.project.com' {
+
     include nodes::bootstrap
 
     # Requires mod 'puppetlabs/apache'
@@ -10,11 +11,28 @@ node 'dev.jenkins.project.com' {
     # Requires mod 'puppetlabs/mysql'
     include lamp::mysql
 
+    include assets::composer
+
     include jenkins
 
+    # @see http://jenkins-php.org/installation.html
     jenkins::plugin {
-        'checkstyle': ;
-        'git': ;
+        'checkstyle':;
+        'cloverphp':;
+        'crap4j':;
+        'dry':;
+        'ghprb':;
+        'git':;
+        'github':;
+        'github-api':;
+        'htmlpublisher':;
+        'jdepend':;
+        'phing':;
+        'plot':;
+        'pmd':;
+        'vagrant':;
+        'violations':;
+        'xunit':;
     }
 
 }
