@@ -7,6 +7,7 @@ class lamp::apache2 {
         docroot => '/vagrant/project/www',
         port => '80',
         priority => '1',
+        override => 'All',
     }
 
     apache::mod { 'rewrite': }
