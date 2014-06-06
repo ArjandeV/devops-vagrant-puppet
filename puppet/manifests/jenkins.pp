@@ -35,4 +35,6 @@ node 'dev.jenkins.project.com' {
         'xunit':;
     }
 
+    include nodes::vhosts::jenkins
+
 }

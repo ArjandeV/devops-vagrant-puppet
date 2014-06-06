@@ -13,4 +13,6 @@ node 'dev.master.project.com' {
 
     include assets::composer
 
+    include nodes::vhosts::master
+
 }
