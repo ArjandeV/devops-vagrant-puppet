@@ -3,6 +3,8 @@
 # @see http://getcomposer.org/
 ##
 class assets::composer {
+    require lamp::php
+
     wget::fetch { 'composer-install':
         source => 'http://getcomposer.org/composer.phar',
         destination => '/tmp/composer.phar',
