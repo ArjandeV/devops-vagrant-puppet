@@ -1,5 +1,5 @@
 class nodes::vhosts::master {
-    require lamp::apache2
+    require lamp::apache
 
     apache::vhost { $fqdn:
         docroot => '/vagrant/project/www',

@@ -3,7 +3,7 @@ node 'dev.master.project.com' {
     include nodes::bootstrap
 
     # Requires mod 'puppetlabs/apache'
-    include lamp::apache2
+    include lamp::apache
 
     # Requires mod 'example42/php'
     include lamp::php
