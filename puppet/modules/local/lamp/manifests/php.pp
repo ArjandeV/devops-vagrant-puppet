@@ -4,8 +4,6 @@ class lamp::php {
         [
             'pear-channels',
             'php-codecoverage',
-            'php-codesniffer',
-            'phpunit',
             'php-validate',
         ]:
         ensure => present,
