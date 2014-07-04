@@ -1,5 +1,5 @@
-Learning DevOps w/ Vagrant / Puppet
-=====================================
+DevOps - Vagrant / Puppet project structure
+=============================================
 
 LAMP Stack
 ------------
